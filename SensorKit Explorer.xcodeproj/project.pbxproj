@@ -1,0 +1,730 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B7030672F5B43DD0004A902 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B7030662F5B43DD0004A902 /* README.md */; };
+		0B70306B2F5B4D250004A902 /* pattern.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 0B7030682F5B4D250004A902 /* pattern.ahap */; };
+		0BE8E7E42F57E1A600572C94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BE8E7E22F57E1A600572C94 /* Assets.xcassets */; };
+		0BE8E7E52F57E1A600572C94 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7D92F57E1A600572C94 /* CompassView.swift */; };
+		0BE8E7E62F57E1A600572C94 /* CompassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7DC2F57E1A600572C94 /* CompassViewModel.swift */; };
+		0BE8E7E72F57E1A600572C94 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7DF2F57E1A600572C94 /* MainView.swift */; };
+		0BE8E7E82F57E1A600572C94 /* SensorKit_ExplorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7E02F57E1A600572C94 /* SensorKit_ExplorerApp.swift */; };
+		0BE8E7EB2F57E61D00572C94 /* HapticTrailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7EA2F57E61D00572C94 /* HapticTrailView.swift */; };
+		0BE8E7EE2F57E64300572C94 /* HapticStudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7ED2F57E64300572C94 /* HapticStudioView.swift */; };
+		0BE8E7F02F57EDAD00572C94 /* CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7EF2F57EDAD00572C94 /* CoreMotionService.swift */; };
+		0BE8E7F42F57EDC900572C94 /* MotionServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7F32F57EDC900572C94 /* MotionServiceProtocol.swift */; };
+		0BE8E7F62F57EDD100572C94 /* ObserveDeviceOrientationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7F52F57EDD100572C94 /* ObserveDeviceOrientationUseCase.swift */; };
+		0BE8E7FC2F57F6A200572C94 /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7FB2F57F6A200572C94 /* DeviceOrientation.swift */; };
+		0BE8E7FE2F57FBC300572C94 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7FD2F57FBC300572C94 /* DIContainer.swift */; };
+		0BE8E8002F57FF3200572C94 /* HapticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E7FF2F57FF3200572C94 /* HapticsService.swift */; };
+		0BE8E8022F58008900572C94 /* CompassHaptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E8012F58008900572C94 /* CompassHaptic.swift */; };
+		0BE8E8042F58020900572C94 /* CardinalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E8032F58020900572C94 /* CardinalDirection.swift */; };
+		0BE8E8062F58025B00572C94 /* EmitCompassHapticUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E8052F58025B00572C94 /* EmitCompassHapticUseCase.swift */; };
+		0BE8E8092F58065800572C94 /* CompassViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE8E8082F58065800572C94 /* CompassViewModelBuilder.swift */; };
+		0BF5F5852F5A323A004E502F /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5842F5A323A004E502F /* MetricView.swift */; };
+		0BF5F5872F5A3274004E502F /* HUDOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5862F5A3274004E502F /* HUDOverlay.swift */; };
+		0BF5F5892F5A33C1004E502F /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5882F5A33C1004E502F /* MapViewRepresentable.swift */; };
+		0BF5F58D2F5A3710004E502F /* HapticTrailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F58C2F5A3710004E502F /* HapticTrailViewModel.swift */; };
+		0BF5F58F2F5A3733004E502F /* HapticTrailViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F58E2F5A3733004E502F /* HapticTrailViewModelBuilder.swift */; };
+		0BF5F5912F5A383B004E502F /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5902F5A383B004E502F /* Coordinates.swift */; };
+		0BF5F5932F5A46F9004E502F /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5922F5A46F9004E502F /* LocationService.swift */; };
+		0BF5F5952F5A4733004E502F /* LocationServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5942F5A4733004E502F /* LocationServiceError.swift */; };
+		0BF5F5972F5A48D8004E502F /* LocationServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5962F5A48D8004E502F /* LocationServiceProtocol.swift */; };
+		0BF5F5992F5A49E7004E502F /* ObserveDeviceLocationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5982F5A49E7004E502F /* ObserveDeviceLocationUseCase.swift */; };
+		0BF5F59B2F5A50AD004E502F /* PermisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F59A2F5A50AD004E502F /* PermisionView.swift */; };
+		0BF5F5A02F5A536A004E502F /* PermisionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F59F2F5A536A004E502F /* PermisionViewModel.swift */; };
+		0BF5F5A22F5A5B3A004E502F /* LocationPermisionRequestUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5A12F5A5B3A004E502F /* LocationPermisionRequestUseCase.swift */; };
+		0BF5F5A52F5A5C4D004E502F /* PermisionViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5A32F5A5C4D004E502F /* PermisionViewModelBuilder.swift */; };
+		0BF5F5A82F5A7C30004E502F /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5A72F5A7C30004E502F /* PedometerService.swift */; };
+		0BF5F5AA2F5A7C90004E502F /* PedometerServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5A92F5A7C90004E502F /* PedometerServiceError.swift */; };
+		0BF5F5AC2F5A89F8004E502F /* PedometerPermisionRequestUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5AB2F5A89F8004E502F /* PedometerPermisionRequestUseCase.swift */; };
+		0BF5F5AE2F5A965F004E502F /* PedometerServiceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5AD2F5A965F004E502F /* PedometerServiceUseCase.swift */; };
+		0BF5F5B02F5ABA68004E502F /* HapticPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5AF2F5ABA68004E502F /* HapticPatternModel.swift */; };
+		0BF5F5B52F5ABAB8004E502F /* HapticStudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5B32F5ABAB8004E502F /* HapticStudioViewModel.swift */; };
+		0BF5F5B62F5ABAB8004E502F /* HapticStudioViewModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5B12F5ABAB8004E502F /* HapticStudioViewModelBuilder.swift */; };
+		0BF5F5B82F5ABBF8004E502F /* HapticsServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5B72F5ABBF8004E502F /* HapticsServiceError.swift */; };
+		0BF5F5BA2F5ABE42004E502F /* MotionServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5B92F5ABE42004E502F /* MotionServiceError.swift */; };
+		0BF5F5BC2F5AC324004E502F /* HapticPersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5BB2F5AC324004E502F /* HapticPersistenceService.swift */; };
+		0BF5F5BE2F5AC3CD004E502F /* HapticPersistenceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5BD2F5AC3CD004E502F /* HapticPersistenceUseCase.swift */; };
+		0BF5F5C02F5AD7C7004E502F /* HapticPatternFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F5BF2F5AD7C7004E502F /* HapticPatternFile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B7030662F5B43DD0004A902 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0B7030682F5B4D250004A902 /* pattern.ahap */ = {isa = PBXFileReference; lastKnownFileType = text; path = pattern.ahap; sourceTree = "<group>"; };
+		0BE8E7AE2F57C4F600572C94 /* SensorKit Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SensorKit Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BE8E7D92F57E1A600572C94 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
+		0BE8E7DC2F57E1A600572C94 /* CompassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewModel.swift; sourceTree = "<group>"; };
+		0BE8E7DF2F57E1A600572C94 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0BE8E7E02F57E1A600572C94 /* SensorKit_ExplorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorKit_ExplorerApp.swift; sourceTree = "<group>"; };
+		0BE8E7E22F57E1A600572C94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BE8E7EA2F57E61D00572C94 /* HapticTrailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTrailView.swift; sourceTree = "<group>"; };
+		0BE8E7ED2F57E64300572C94 /* HapticStudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticStudioView.swift; sourceTree = "<group>"; };
+		0BE8E7EF2F57EDAD00572C94 /* CoreMotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionService.swift; sourceTree = "<group>"; };
+		0BE8E7F32F57EDC900572C94 /* MotionServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionServiceProtocol.swift; sourceTree = "<group>"; };
+		0BE8E7F52F57EDD100572C94 /* ObserveDeviceOrientationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveDeviceOrientationUseCase.swift; sourceTree = "<group>"; };
+		0BE8E7FB2F57F6A200572C94 /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		0BE8E7FD2F57FBC300572C94 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		0BE8E7FF2F57FF3200572C94 /* HapticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsService.swift; sourceTree = "<group>"; };
+		0BE8E8012F58008900572C94 /* CompassHaptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHaptic.swift; sourceTree = "<group>"; };
+		0BE8E8032F58020900572C94 /* CardinalDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalDirection.swift; sourceTree = "<group>"; };
+		0BE8E8052F58025B00572C94 /* EmitCompassHapticUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitCompassHapticUseCase.swift; sourceTree = "<group>"; };
+		0BE8E8082F58065800572C94 /* CompassViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassViewModelBuilder.swift; sourceTree = "<group>"; };
+		0BF5F5842F5A323A004E502F /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
+		0BF5F5862F5A3274004E502F /* HUDOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDOverlay.swift; sourceTree = "<group>"; };
+		0BF5F5882F5A33C1004E502F /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		0BF5F58C2F5A3710004E502F /* HapticTrailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTrailViewModel.swift; sourceTree = "<group>"; };
+		0BF5F58E2F5A3733004E502F /* HapticTrailViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticTrailViewModelBuilder.swift; sourceTree = "<group>"; };
+		0BF5F5902F5A383B004E502F /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		0BF5F5922F5A46F9004E502F /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		0BF5F5942F5A4733004E502F /* LocationServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceError.swift; sourceTree = "<group>"; };
+		0BF5F5962F5A48D8004E502F /* LocationServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceProtocol.swift; sourceTree = "<group>"; };
+		0BF5F5982F5A49E7004E502F /* ObserveDeviceLocationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveDeviceLocationUseCase.swift; sourceTree = "<group>"; };
+		0BF5F59A2F5A50AD004E502F /* PermisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermisionView.swift; sourceTree = "<group>"; };
+		0BF5F59F2F5A536A004E502F /* PermisionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermisionViewModel.swift; sourceTree = "<group>"; };
+		0BF5F5A12F5A5B3A004E502F /* LocationPermisionRequestUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermisionRequestUseCase.swift; sourceTree = "<group>"; };
+		0BF5F5A32F5A5C4D004E502F /* PermisionViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermisionViewModelBuilder.swift; sourceTree = "<group>"; };
+		0BF5F5A62F5A6270004E502F /* SensorKit-Explorer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SensorKit-Explorer-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0BF5F5A72F5A7C30004E502F /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
+		0BF5F5A92F5A7C90004E502F /* PedometerServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerServiceError.swift; sourceTree = "<group>"; };
+		0BF5F5AB2F5A89F8004E502F /* PedometerPermisionRequestUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerPermisionRequestUseCase.swift; sourceTree = "<group>"; };
+		0BF5F5AD2F5A965F004E502F /* PedometerServiceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerServiceUseCase.swift; sourceTree = "<group>"; };
+		0BF5F5AF2F5ABA68004E502F /* HapticPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticPatternModel.swift; sourceTree = "<group>"; };
+		0BF5F5B12F5ABAB8004E502F /* HapticStudioViewModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticStudioViewModelBuilder.swift; sourceTree = "<group>"; };
+		0BF5F5B32F5ABAB8004E502F /* HapticStudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticStudioViewModel.swift; sourceTree = "<group>"; };
+		0BF5F5B72F5ABBF8004E502F /* HapticsServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsServiceError.swift; sourceTree = "<group>"; };
+		0BF5F5B92F5ABE42004E502F /* MotionServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionServiceError.swift; sourceTree = "<group>"; };
+		0BF5F5BB2F5AC324004E502F /* HapticPersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticPersistenceService.swift; sourceTree = "<group>"; };
+		0BF5F5BD2F5AC3CD004E502F /* HapticPersistenceUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticPersistenceUseCase.swift; sourceTree = "<group>"; };
+		0BF5F5BF2F5AD7C7004E502F /* HapticPatternFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticPatternFile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BE8E7AB2F57C4F600572C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BE8E7A52F57C4F600572C94 = {
+			isa = PBXGroup;
+			children = (
+				0B7030682F5B4D250004A902 /* pattern.ahap */,
+				0B7030662F5B43DD0004A902 /* README.md */,
+				0BE8E7AF2F57C4F600572C94 /* Products */,
+				0BE8E7E32F57E1A600572C94 /* SensorKit Explorer */,
+			);
+			sourceTree = "<group>";
+		};
+		0BE8E7AF2F57C4F600572C94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7AE2F57C4F600572C94 /* SensorKit Explorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BE8E7D02F57E1A600572C94 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5B72F5ABBF8004E502F /* HapticsServiceError.swift */,
+				0BF5F5B92F5ABE42004E502F /* MotionServiceError.swift */,
+				0BF5F5942F5A4733004E502F /* LocationServiceError.swift */,
+				0BF5F5A92F5A7C90004E502F /* PedometerServiceError.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		0BE8E7D12F57E1A600572C94 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7EF2F57EDAD00572C94 /* CoreMotionService.swift */,
+				0BE8E7FF2F57FF3200572C94 /* HapticsService.swift */,
+				0BF5F5922F5A46F9004E502F /* LocationService.swift */,
+				0BF5F5A72F5A7C30004E502F /* PedometerService.swift */,
+				0BF5F5BB2F5AC324004E502F /* HapticPersistenceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0BE8E7D22F57E1A600572C94 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7D02F57E1A600572C94 /* Mappers */,
+				0BE8E7D12F57E1A600572C94 /* Services */,
+				0BE8E7FD2F57FBC300572C94 /* DIContainer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0BE8E7D32F57E1A600572C94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7FB2F57F6A200572C94 /* DeviceOrientation.swift */,
+				0BE8E8012F58008900572C94 /* CompassHaptic.swift */,
+				0BE8E8032F58020900572C94 /* CardinalDirection.swift */,
+				0BF5F5902F5A383B004E502F /* Coordinates.swift */,
+				0BF5F5AF2F5ABA68004E502F /* HapticPatternModel.swift */,
+				0BF5F5BF2F5AD7C7004E502F /* HapticPatternFile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BE8E7D42F57E1A600572C94 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7F32F57EDC900572C94 /* MotionServiceProtocol.swift */,
+				0BF5F5962F5A48D8004E502F /* LocationServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0BE8E7D52F57E1A600572C94 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7F52F57EDD100572C94 /* ObserveDeviceOrientationUseCase.swift */,
+				0BE8E8052F58025B00572C94 /* EmitCompassHapticUseCase.swift */,
+				0BF5F5BD2F5AC3CD004E502F /* HapticPersistenceUseCase.swift */,
+				0BF5F5982F5A49E7004E502F /* ObserveDeviceLocationUseCase.swift */,
+				0BF5F5A12F5A5B3A004E502F /* LocationPermisionRequestUseCase.swift */,
+				0BF5F5AB2F5A89F8004E502F /* PedometerPermisionRequestUseCase.swift */,
+				0BF5F5AD2F5A965F004E502F /* PedometerServiceUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0BE8E7D62F57E1A600572C94 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7D32F57E1A600572C94 /* Model */,
+				0BE8E7D42F57E1A600572C94 /* Protocols */,
+				0BE8E7D52F57E1A600572C94 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0BE8E7D72F57E1A600572C94 /* Haptic Studio */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5B22F5ABAB8004E502F /* Builder */,
+				0BF5F5B42F5ABAB8004E502F /* ViewModel */,
+				0BE8E7EC2F57E63500572C94 /* View */,
+			);
+			path = "Haptic Studio";
+			sourceTree = "<group>";
+		};
+		0BE8E7D82F57E1A600572C94 /* Haptic Trail */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F58B2F5A3702004E502F /* Builder */,
+				0BF5F58A2F5A36FB004E502F /* ViewModel */,
+				0BE8E7E92F57E60D00572C94 /* View */,
+			);
+			path = "Haptic Trail";
+			sourceTree = "<group>";
+		};
+		0BE8E7DA2F57E1A600572C94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7D92F57E1A600572C94 /* CompassView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BE8E7DB2F57E1A600572C94 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		0BE8E7DD2F57E1A600572C94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7DB2F57E1A600572C94 /* Subviews */,
+				0BE8E7DC2F57E1A600572C94 /* CompassViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BE8E7DE2F57E1A600572C94 /* Motion Compass */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E8072F58064A00572C94 /* Builder */,
+				0BE8E7DD2F57E1A600572C94 /* ViewModel */,
+				0BE8E7DA2F57E1A600572C94 /* View */,
+			);
+			path = "Motion Compass";
+			sourceTree = "<group>";
+		};
+		0BE8E7E12F57E1A600572C94 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7E02F57E1A600572C94 /* SensorKit_ExplorerApp.swift */,
+				0BE8E7DF2F57E1A600572C94 /* MainView.swift */,
+				0BF5F59C2F5A534D004E502F /* Permisions */,
+				0BE8E7DE2F57E1A600572C94 /* Motion Compass */,
+				0BE8E7D82F57E1A600572C94 /* Haptic Trail */,
+				0BE8E7D72F57E1A600572C94 /* Haptic Studio */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0BE8E7E32F57E1A600572C94 /* SensorKit Explorer */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5A62F5A6270004E502F /* SensorKit-Explorer-Info.plist */,
+				0BE8E7D22F57E1A600572C94 /* Data */,
+				0BE8E7D62F57E1A600572C94 /* Domain */,
+				0BE8E7E12F57E1A600572C94 /* Presentation */,
+				0BE8E7E22F57E1A600572C94 /* Assets.xcassets */,
+			);
+			path = "SensorKit Explorer";
+			sourceTree = "<group>";
+		};
+		0BE8E7E92F57E60D00572C94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5812F5A320F004E502F /* Subviews */,
+				0BE8E7EA2F57E61D00572C94 /* HapticTrailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BE8E7EC2F57E63500572C94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E7ED2F57E64300572C94 /* HapticStudioView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BE8E8072F58064A00572C94 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0BE8E8082F58065800572C94 /* CompassViewModelBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0BF5F5812F5A320F004E502F /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5842F5A323A004E502F /* MetricView.swift */,
+				0BF5F5862F5A3274004E502F /* HUDOverlay.swift */,
+				0BF5F5882F5A33C1004E502F /* MapViewRepresentable.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		0BF5F58A2F5A36FB004E502F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F58C2F5A3710004E502F /* HapticTrailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BF5F58B2F5A3702004E502F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F58E2F5A3733004E502F /* HapticTrailViewModelBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0BF5F59C2F5A534D004E502F /* Permisions */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5A42F5A5C4D004E502F /* Builder */,
+				0BF5F59E2F5A5358004E502F /* ViewModel */,
+				0BF5F59D2F5A5353004E502F /* View */,
+			);
+			path = Permisions;
+			sourceTree = "<group>";
+		};
+		0BF5F59D2F5A5353004E502F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F59A2F5A50AD004E502F /* PermisionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BF5F59E2F5A5358004E502F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F59F2F5A536A004E502F /* PermisionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0BF5F5A42F5A5C4D004E502F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5A32F5A5C4D004E502F /* PermisionViewModelBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0BF5F5B22F5ABAB8004E502F /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5B12F5ABAB8004E502F /* HapticStudioViewModelBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0BF5F5B42F5ABAB8004E502F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BF5F5B32F5ABAB8004E502F /* HapticStudioViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BE8E7AD2F57C4F600572C94 /* SensorKit Explorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BE8E7B92F57C4F700572C94 /* Build configuration list for PBXNativeTarget "SensorKit Explorer" */;
+			buildPhases = (
+				0BE8E7AA2F57C4F600572C94 /* Sources */,
+				0BE8E7AB2F57C4F600572C94 /* Frameworks */,
+				0BE8E7AC2F57C4F600572C94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SensorKit Explorer";
+			packageProductDependencies = (
+			);
+			productName = "SensorKit Explorer";
+			productReference = 0BE8E7AE2F57C4F600572C94 /* SensorKit Explorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BE8E7A62F57C4F600572C94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					0BE8E7AD2F57C4F600572C94 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 0BE8E7A92F57C4F600572C94 /* Build configuration list for PBXProject "SensorKit Explorer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BE8E7A52F57C4F600572C94;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0BE8E7AF2F57C4F600572C94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BE8E7AD2F57C4F600572C94 /* SensorKit Explorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE8E7AC2F57C4F600572C94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B7030672F5B43DD0004A902 /* README.md in Resources */,
+				0BE8E7E42F57E1A600572C94 /* Assets.xcassets in Resources */,
+				0B70306B2F5B4D250004A902 /* pattern.ahap in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BE8E7AA2F57C4F600572C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF5F5B52F5ABAB8004E502F /* HapticStudioViewModel.swift in Sources */,
+				0BF5F5B62F5ABAB8004E502F /* HapticStudioViewModelBuilder.swift in Sources */,
+				0BF5F5B82F5ABBF8004E502F /* HapticsServiceError.swift in Sources */,
+				0BE8E8062F58025B00572C94 /* EmitCompassHapticUseCase.swift in Sources */,
+				0BF5F5BA2F5ABE42004E502F /* MotionServiceError.swift in Sources */,
+				0BF5F5BE2F5AC3CD004E502F /* HapticPersistenceUseCase.swift in Sources */,
+				0BE8E7E52F57E1A600572C94 /* CompassView.swift in Sources */,
+				0BE8E7E62F57E1A600572C94 /* CompassViewModel.swift in Sources */,
+				0BE8E7F62F57EDD100572C94 /* ObserveDeviceOrientationUseCase.swift in Sources */,
+				0BF5F5C02F5AD7C7004E502F /* HapticPatternFile.swift in Sources */,
+				0BF5F5BC2F5AC324004E502F /* HapticPersistenceService.swift in Sources */,
+				0BF5F5952F5A4733004E502F /* LocationServiceError.swift in Sources */,
+				0BF5F5A02F5A536A004E502F /* PermisionViewModel.swift in Sources */,
+				0BF5F5A82F5A7C30004E502F /* PedometerService.swift in Sources */,
+				0BF5F5852F5A323A004E502F /* MetricView.swift in Sources */,
+				0BF5F5AA2F5A7C90004E502F /* PedometerServiceError.swift in Sources */,
+				0BF5F5872F5A3274004E502F /* HUDOverlay.swift in Sources */,
+				0BF5F5B02F5ABA68004E502F /* HapticPatternModel.swift in Sources */,
+				0BE8E8002F57FF3200572C94 /* HapticsService.swift in Sources */,
+				0BE8E8022F58008900572C94 /* CompassHaptic.swift in Sources */,
+				0BE8E7FE2F57FBC300572C94 /* DIContainer.swift in Sources */,
+				0BF5F5932F5A46F9004E502F /* LocationService.swift in Sources */,
+				0BF5F5A52F5A5C4D004E502F /* PermisionViewModelBuilder.swift in Sources */,
+				0BF5F5912F5A383B004E502F /* Coordinates.swift in Sources */,
+				0BF5F5892F5A33C1004E502F /* MapViewRepresentable.swift in Sources */,
+				0BE8E7E72F57E1A600572C94 /* MainView.swift in Sources */,
+				0BF5F59B2F5A50AD004E502F /* PermisionView.swift in Sources */,
+				0BF5F5A22F5A5B3A004E502F /* LocationPermisionRequestUseCase.swift in Sources */,
+				0BE8E7F42F57EDC900572C94 /* MotionServiceProtocol.swift in Sources */,
+				0BE8E8092F58065800572C94 /* CompassViewModelBuilder.swift in Sources */,
+				0BF5F58D2F5A3710004E502F /* HapticTrailViewModel.swift in Sources */,
+				0BE8E7EE2F57E64300572C94 /* HapticStudioView.swift in Sources */,
+				0BF5F5AE2F5A965F004E502F /* PedometerServiceUseCase.swift in Sources */,
+				0BE8E8042F58020900572C94 /* CardinalDirection.swift in Sources */,
+				0BF5F5972F5A48D8004E502F /* LocationServiceProtocol.swift in Sources */,
+				0BF5F58F2F5A3733004E502F /* HapticTrailViewModelBuilder.swift in Sources */,
+				0BE8E7FC2F57F6A200572C94 /* DeviceOrientation.swift in Sources */,
+				0BF5F5AC2F5A89F8004E502F /* PedometerPermisionRequestUseCase.swift in Sources */,
+				0BE8E7EB2F57E61D00572C94 /* HapticTrailView.swift in Sources */,
+				0BE8E7E82F57E1A600572C94 /* SensorKit_ExplorerApp.swift in Sources */,
+				0BE8E7F02F57EDAD00572C94 /* CoreMotionService.swift in Sources */,
+				0BF5F5992F5A49E7004E502F /* ObserveDeviceLocationUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0BE8E7B72F57C4F700572C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9TAXVQDQJU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BE8E7B82F57C4F700572C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9TAXVQDQJU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BE8E7BA2F57C4F700572C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TAXVQDQJU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SensorKit-Explorer-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MrPro.SensorKit-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BE8E7BB2F57C4F700572C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TAXVQDQJU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SensorKit-Explorer-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MrPro.SensorKit-Explorer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BE8E7A92F57C4F600572C94 /* Build configuration list for PBXProject "SensorKit Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8E7B72F57C4F700572C94 /* Debug */,
+				0BE8E7B82F57C4F700572C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BE8E7B92F57C4F700572C94 /* Build configuration list for PBXNativeTarget "SensorKit Explorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8E7BA2F57C4F700572C94 /* Debug */,
+				0BE8E7BB2F57C4F700572C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BE8E7A62F57C4F600572C94 /* Project object */;
+}
