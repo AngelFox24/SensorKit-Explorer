@@ -12,6 +12,8 @@ Welcome to **SensorKit Explorer**, a sample iOS application designed to demonstr
 
 **Note:** Two demonstration videos are attached because the export of the AHAP file and the location permission prompt were recorded separately.
 
+**Minimum iOS Version:** This project requires iOS 17.6 or later to utilize the new `@Observable` property wrapper for more efficient observation.
+
 ---
 
 ## Features
@@ -53,6 +55,7 @@ Note: The originally intended `SensorBus` event bus was not implemented due to t
 - Sensor update frequencies are fixed and may need tuning for specific use cases.
 - UI is minimal and primarily for demonstration purposes.
 - AHAP files can be imported into the app but currently are not in the correct Core Haptics format and need proper formatting.
+- Dark Mode is not currently supported.
 
 ---
 
@@ -64,6 +67,8 @@ Note: The originally intended `SensorBus` event bus was not implemented due to t
 - Provide configuration options for sensor update intervals.
 - Expand support for additional sensors and data types.
 - Improve AHAP export to produce files in the correct Core Haptics format.
+- Plan to add multiple environments (Development, Production) using `.xcconfig` files and Xcode schemes.
+- Add Dark Mode support for the app.
 
 ---
 
